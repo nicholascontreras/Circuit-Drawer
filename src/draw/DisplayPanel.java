@@ -45,7 +45,7 @@ public class DisplayPanel extends JPanel implements MouseListener, MouseMotionLi
 		inputs = CircuitDrawer.inputPositions;
 		gates = CircuitDrawer.gateLocations;
 
-		this.setPreferredSize(new Dimension(Math.min(image.getWidth(), 1500), Math.min(image.getHeight(), 900)));
+		this.setPreferredSize(new Dimension(Math.min(image.getWidth(), 900), Math.min(image.getHeight(), 600)));
 
 		sp.addMouseListener(this);
 

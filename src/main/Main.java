@@ -18,20 +18,9 @@ import stringparser.StringParser;
  */
 
 public class Main {
-
 	public static void main(String[] args) {
-
-		// String s = JOptionPane.showInputDialog(null, "Enter boolean logic
-		// statement:");
-
-		LogicGate output = StringParser.parseString("((b | ((c | (! (g | h))) & (! d))) & (e | (! (f & a))))");
-
-		// LogicGate output = StringParser.parseString("(a & (! b))");
-
+		LogicGate output = StringParser.parseString("(a & (b | c))");
 		LogicGate.printCircut(output);
-
 		new DisplayPanel(output);
-		// }
 	}
-
 }
